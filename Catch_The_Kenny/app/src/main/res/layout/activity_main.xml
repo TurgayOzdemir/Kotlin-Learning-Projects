@@ -8,12 +8,122 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/timeText"
+        android:layout_width="268dp"
+        android:layout_height="44dp"
+        android:text="Time : "
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="262dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:text="Score : "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/timeText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timeText"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="306dp"
+        android:layout_height="307dp"
+        android:foregroundGravity="center"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText"
+        app:layout_constraintVertical_bias="0.384">
+
+        <ImageView
+            android:id="@+id/cartman1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="0"
+            app:layout_row="0"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="1"
+            app:layout_row="0"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="2"
+            app:layout_row="0"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="0"
+            app:layout_row="1"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="1"
+            app:layout_row="1"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="2"
+            app:layout_row="1"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="0"
+            app:layout_row="2"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="1"
+            app:layout_row="2"></ImageView>
+
+        <ImageView
+            android:id="@+id/cartman9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="imageClick"
+            android:src="@drawable/cartman"
+            app:layout_column="2"
+            app:layout_row="2"></ImageView>
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
