@@ -56,4 +56,7 @@ dependencies {
     implementation("com.squareup.retrofit2:adapter-rxjava3:$retrofitVersion")
     implementation("io.reactivex.rxjava3:rxjava:$rxjavaVersion")
     implementation("io.reactivex.rxjava3:rxandroid:$rxAndroidVersion")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1-Beta")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1-Beta")
 }
